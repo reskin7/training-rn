@@ -1,21 +1,21 @@
 import React from 'react';
 
-import logo from '../../../assets/logo.svg';
+import logo from '../../../assets/jest.png';
+
+import FoodList from './components/FoodList';
 
 import './styles.css';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to React</h1>
+    <div className="home">
+      <header className="home-header">
+        <img src={logo} className="home-logo" alt="logo" />
+        <h1 className="home-title">Welcome to Jest over async actions</h1>
       </header>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <FoodList />
     </div>
   );
 }
 
-export default App;
+export default Home;
