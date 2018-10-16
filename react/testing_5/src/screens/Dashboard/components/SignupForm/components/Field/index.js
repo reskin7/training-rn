@@ -13,7 +13,7 @@ const Field = ({
     <label>{label}</label>
     <div>
       <input {...input} placeholder={label} type={type} />
-      {touched && error && <span>{error}</span>}
+      {touched && error && <span className={`error error-${input.name}`}>{error}</span>}
     </div>
   </div>
 );

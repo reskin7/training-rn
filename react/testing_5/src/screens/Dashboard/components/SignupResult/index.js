@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 function SignupResult ({handleButtonClick}) {
   return(
     <Fragment>
-      <span> Usuario registrado exitosamente. </span>
-      <button onClick={handleButtonClick}>Volver a cargar</button>
+      <span className="result">User has been created successfully</span>
+      <button onClick={handleButtonClick}>Reload form</button>
     </Fragment>
   )
 };
