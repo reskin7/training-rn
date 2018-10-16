@@ -1,7 +1,7 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 
-import CustomField from './components/Field';
+import CustomField from '../../../../components/Field';
 import { required } from './utils';
 
 function SignupForm(props) {
@@ -17,6 +17,5 @@ function SignupForm(props) {
 }
 
 export default reduxForm({
-  // a unique name for the form
   form: 'SignUp'
 })(SignupForm)

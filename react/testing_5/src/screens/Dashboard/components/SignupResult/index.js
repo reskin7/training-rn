@@ -9,4 +9,4 @@ function SignupResult ({handleButtonClick}) {
   )
 };
 
-export default SignupResult
+export default SignupResult;
