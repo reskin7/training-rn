@@ -1,9 +1,9 @@
-import { getFoods } from '../../services/FoodService';
+import { getFoods } from "../../services/FoodService";
 
 export const actions = {
-  GET_FOODS: '@@FOOD/GET_FOODS',
-  GET_FOODS_SUCCESS: '@@FOOD/GET_FOODS_SUCCESS',
-  GET_FOODS_FAILURE: '@@FOOD/GET_FOODS_FAILURE'
+  GET_FOODS: "@@FOOD/GET_FOODS",
+  GET_FOODS_SUCCESS: "@@FOOD/GET_FOODS_SUCCESS",
+  GET_FOODS_FAILURE: "@@FOOD/GET_FOODS_FAILURE"
 };
 
 const actionCreators = {
@@ -11,7 +11,10 @@ const actionCreators = {
     dispatch({ type: actions.GET_FOODS });
     const response = await getFoods();
     if (response.ok) {
-      dispatch({ type: actions.GET_FOODS_SUCCESS, payload: response.data.foods });
+      dispatch({
+        type: actions.GET_FOODS_SUCCESS,
+        payload: response.data.foods
+      });
     } else {
       dispatch({
         type: actions.GET_FOODS_FAILURE,
