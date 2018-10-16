@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles.css';
+
 const Field = ({
   input,
   label,
@@ -7,13 +9,11 @@ const Field = ({
   meta: { touched, error, warning },
   syncError
 }) => (
-  <div>
+  <div className="field-container">
     <label>{label}</label>
     <div>
       <input {...input} placeholder={label} type={type} />
-      {
-        ((syncError && <span>{syncError}</span>) ||
-          (warning && <span>{warning}</span>))}
+      {touched && error && <span>{error}</span>}
     </div>
   </div>
 );
