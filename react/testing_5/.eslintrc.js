@@ -2,7 +2,8 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    browser: true
+    browser: true,
+    "jest/globals": true
   },
   parser: "babel-eslint",
   parserOptions: {
@@ -12,7 +13,7 @@ module.exports = {
     },
     sourceType: "module"
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "jest"],
   extends: [
     "eslint:recommended",
     "airbnb",

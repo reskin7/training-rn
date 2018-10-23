@@ -1,11 +1,12 @@
-import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import React from 'react';
+import { Field, reduxForm } from 'redux-form';
+import PropTypes from 'prop-types';
 
 import CustomField from '../../../../components/Field';
+
 import { required } from './utils';
 
-function SignupForm(props) {
-  const { handleSubmit } = props
+function SignupForm({ handleSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="signup-form">
       <Field label="First name" component={CustomField} name="firstName" type="text" validate={required} />
@@ -16,6 +17,10 @@ function SignupForm(props) {
   );
 }
 
+SignupForm.propTypes = {
+  handleSubmit: PropTypes.func.isRequired
+};
+
 export default reduxForm({
   form: 'SignUp'
-})(SignupForm)
+})(SignupForm);

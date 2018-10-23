@@ -8,11 +8,12 @@ import SignupResult from './components/SignupResult';
 class Dashboard extends Component {
   state = { submitted: false };
 
-  submitForm = values => this.setState({submitted: true});
+  submitForm = () => this.setState({ submitted: true });
 
-  cleanForm = () => this.setState({submitted: false});
+  cleanForm = () => this.setState({ submitted: false });
 
   render() {
+    const { submitted } = this.state;
     return (
       <div className="App">
         <header className="App-header">
@@ -23,7 +24,11 @@ class Dashboard extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {!this.state.submitted ? <SignupForm onSubmit={this.submitForm} /> : <SignupResult handleButtonClick={this.cleanForm} />}
+        {!submitted ? (
+          <SignupForm onSubmit={this.submitForm} />
+        ) : (
+          <SignupResult handleButtonClick={this.cleanForm} />
+        )}
       </div>
     );
   }
