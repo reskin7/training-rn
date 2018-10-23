@@ -1,10 +1,12 @@
-const puppeteer = require('puppeteer');
+import Puppeteer from 'puppeteer';
+
+import { TEST_BASE_URL } from '../config/test';
 
 describe('H1 Text', () => {
   it(
     'h1 loads correctly',
     async () => {
-      const browser = await puppeteer.launch();
+      const browser = await Puppeteer.launch();
       const page = await browser.newPage();
 
       page.emulate({
@@ -15,7 +17,7 @@ describe('H1 Text', () => {
         userAgent: ''
       });
 
-      await page.goto('http://localhost:3000/');
+      await page.goto();
       await page.waitForSelector('.App-title');
 
       const html = await page.$eval('.App-title', e => e.innerHTML);

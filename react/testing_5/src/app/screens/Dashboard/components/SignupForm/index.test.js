@@ -1,10 +1,12 @@
-const faker = require('faker');
-const puppeteer = require('puppeteer');
+import Faker from 'faker';
+import Puppeteer from 'puppeteer';
+
+import { TEST_BASE_URL } from '../../../../../config/test';
 
 const person = {
-  firstName: faker.name.firstName(),
-  lastName: faker.name.lastName(),
-  email: faker.internet.email()
+  firstName: Faker.name.firstName(),
+  lastName: Faker.name.lastName(),
+  email: Faker.internet.email()
 };
 
 describe('Signup Form', () => {
@@ -12,7 +14,7 @@ describe('Signup Form', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch();
+    browser = await Puppeteer.launch();
     page = await browser.newPage();
 
     page.emulate({
@@ -24,7 +26,7 @@ describe('Signup Form', () => {
     });
   });
 
-  beforeEach(async () => page.goto('http://localhost:3000/'));
+  beforeEach(async () => page.goto(TEST_BASE_URL));
 
   afterAll(() => browser.close());
 

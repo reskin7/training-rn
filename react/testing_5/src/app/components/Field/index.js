@@ -2,20 +2,14 @@ import React from 'react';
 
 import './styles.css';
 
-const Field = ({
-  input,
-  label,
-  type,
-  meta: { touched, error, warning },
-  syncError
-}) => (
-  <div className="field-container">
-    <label>{label}</label>
-    <div>
+function Field({ input, label, type, meta: { touched, error } }) {
+  return (
+    <div className="field-container">
+      <span>{label}</span>
       <input {...input} placeholder={label} type={type} />
       {touched && error && <span className={`error error-${input.name}`}>{error}</span>}
     </div>
-  </div>
-);
+  );
+}
 
 export default Field;

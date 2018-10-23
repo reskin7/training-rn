@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
-import './styles.css';
 import SignupForm from './components/SignupForm';
 import SignupResult from './components/SignupResult';
+import logo from './logo.svg';
+import './styles.css';
 
 class Dashboard extends Component {
   state = { submitted: false };
@@ -15,19 +15,16 @@ class Dashboard extends Component {
   render() {
     const { submitted } = this.state;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <h1 className="App-subtitle">This is a finger exercise</h1>
+      <div className="app">
+        <header className="app-header">
+          <img src={logo} className="app-logo" alt="logo" />
+          <h1 className="app-title">Welcome to React</h1>
+          <h1 className="app-subtitle">This is a finger exercise</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        {!submitted ? (
-          <SignupForm onSubmit={this.submitForm} />
-        ) : (
+        {submitted ? (
           <SignupResult handleButtonClick={this.cleanForm} />
+        ) : (
+          <SignupForm onSubmit={this.submitForm} />
         )}
       </div>
     );

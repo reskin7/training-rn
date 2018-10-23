@@ -4,14 +4,15 @@ import PropTypes from 'prop-types';
 
 import CustomField from '../../../../components/Field';
 
+import { FIELDS, SIGNUP_FORM } from './constants';
 import { required } from './utils';
 
 function SignupForm({ handleSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="signup-form">
-      <Field label="First name" component={CustomField} name="firstName" type="text" validate={required} />
-      <Field label="Last name" component={CustomField} name="lastName" type="text" validate={required} />
-      <Field label="Email" component={CustomField} name="email" type="email" validate={required} />
+      {FIELDS.map(field => (
+        <Field component={CustomField} validate={required} key={field.name} {...field} />
+      ))}
       <button type="submit">Submit</button>
     </form>
   );
@@ -22,5 +23,5 @@ SignupForm.propTypes = {
 };
 
 export default reduxForm({
-  form: 'SignUp'
+  form: SIGNUP_FORM
 })(SignupForm);
