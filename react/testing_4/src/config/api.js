@@ -1,7 +1,9 @@
 import { create } from "apisauce";
 
+import { BASE_URL } from "./constants";
+
 const api = create({
-  baseURL: "http://private-b4996-wfoodapi.apiary-mock.com/",
+  baseURL: BASE_URL,
   timeout: 5000
 });
 
