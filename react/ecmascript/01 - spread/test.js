@@ -49,8 +49,8 @@ describe('Spread operator', () => {
 
     reverseMerge(example1, example2);
 
-    expect(example1.toEqual([1, 2]));
-    expect(example2.toEqual([3, 4]));
+    expect(example1).toEqual([1, 2]);
+    expect(example2).toEqual([3, 4]);
   });
   xit('filterAttribs filters \'a\' and \'b\' by default', () => {
     expect(filterAttribs({ a: 1, b: 2, c: 3 })).toEqual({ c: 3 });
@@ -64,6 +64,6 @@ describe('Spread operator', () => {
 
     filterAttribs(example);
 
-    expect(example.toEqual({ a: 1, b: 2, c: 3 }));
+    expect(example).toEqual({ a: 1, b: 2, c: 3 });
   });
 });
