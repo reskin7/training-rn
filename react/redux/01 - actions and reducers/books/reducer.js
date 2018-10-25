@@ -1,4 +1,4 @@
-import actions from './actions';
+import { actions } from './actions';
 
 /*
 initialState has an object that indicates the initial values for the store.

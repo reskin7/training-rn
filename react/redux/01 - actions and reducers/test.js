@@ -1,6 +1,6 @@
 import store from './store';
 import authActionsCreators from '../01 - actions and reducers/auth/actions';
-import booksActionsCreators from '../01 - actions and reducers/auth/actions';
+import booksActionsCreators from '../01 - actions and reducers/books/actions';
 
 describe('Actions', () => {
   xit('sets your favorite book', () => {
