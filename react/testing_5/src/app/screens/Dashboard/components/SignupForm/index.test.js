@@ -3,13 +3,15 @@ import Puppeteer from 'puppeteer';
 
 import { TEST_BASE_URL } from '../../../../../config/test';
 
+// import { FIELDS } from './constants';
+
 const person = {
   firstName: Faker.name.firstName(),
   lastName: Faker.name.lastName(),
   email: Faker.internet.email()
 };
 
-describe('Signup Form', () => {
+describe('Signup Form (use FIELDS constants)', () => {
   let browser;
   let page;
 

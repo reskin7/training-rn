@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
+import Header from './components/Header';
 import SignupForm from './components/SignupForm';
 import SignupResult from './components/SignupResult';
-import logo from './logo.svg';
 import './styles.css';
 
 class Dashboard extends Component {
@@ -16,16 +16,8 @@ class Dashboard extends Component {
     const { submitted } = this.state;
     return (
       <div className="app">
-        <header className="app-header">
-          <img src={logo} className="app-logo" alt="logo" />
-          <h1 className="app-title">Welcome to React</h1>
-          <h1 className="app-subtitle">This is a finger exercise</h1>
-        </header>
-        {submitted ? (
-          <SignupResult handleButtonClick={this.cleanForm} />
-        ) : (
-          <SignupForm onSubmit={this.submitForm} />
-        )}
+        <Header />
+        {submitted ? <SignupResult onClick={this.cleanForm} /> : <SignupForm onSubmit={this.submitForm} />}
       </div>
     );
   }

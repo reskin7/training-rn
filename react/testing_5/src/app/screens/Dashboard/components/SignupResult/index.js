@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-function SignupResult({ handleButtonClick }) {
+function SignupResult({ onClick }) {
   return (
     <Fragment>
       <span className="result">User has been created successfully</span>
-      <button type="submit" onClick={handleButtonClick}>
+      <button type="submit" onClick={onClick}>
         Reload form
       </button>
     </Fragment>
@@ -13,7 +13,7 @@ function SignupResult({ handleButtonClick }) {
 }
 
 SignupResult.propTypes = {
-  handleButtonClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired
 };
 
 export default SignupResult;
