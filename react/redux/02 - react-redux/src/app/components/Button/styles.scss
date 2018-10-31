@@ -37,3 +37,12 @@
     }
   }
 }
+
+.danger {
+  border-color: $red;
+  color: $red;
+
+  &::after {
+    background: $red;
+  }
+}

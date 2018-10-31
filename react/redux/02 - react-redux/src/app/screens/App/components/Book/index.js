@@ -8,13 +8,17 @@ class Book extends PureComponent {
   handleClick = () => {
     const {
       data: { id, name },
-      handleClick
+      configButton
     } = this.props;
-    handleClick({ id, name, quantity: 1 });
+    if (configButton.isDanger) {
+      configButton.function(id);
+    } else {
+      configButton.function({ id, name, quantity: 1 });
+    }
   };
 
   render() {
-    const { data, isSelected } = this.props;
+    const { data, configButton } = this.props;
     return (
       <div className={styles.bookItem}>
         <div className={styles.book}>
@@ -38,7 +42,7 @@ class Book extends PureComponent {
           </div>
           <div className={styles.bookBack} />
         </div>
-        {isSelected && <Button text="Add to cart" onClick={this.handleClick} />}
+        <Button {...configButton} onClick={this.handleClick} />
       </div>
     );
   }
@@ -46,14 +50,18 @@ class Book extends PureComponent {
 
 Book.propTypes = {
   data: shape({
+    id: number,
     name: string,
     author: string,
     image: string,
     summary: string,
     year: number
   }),
-  isSelected: bool,
-  handleClick: func.isRequired
+  configButton: shape({
+    text: string.isRequired,
+    function: func.isRequired,
+    isDanger: bool
+  })
 };
 
 export default Book;

@@ -26,7 +26,7 @@ class Item extends PureComponent {
           <Button className={styles.buttonCart} onClick={this.addItem}>
             <i className="fa fa-plus" />
           </Button>
-          <Button className={`${styles.buttonCart} ${styles.buttonDelete}`} onClick={this.removeItem}>
+          <Button className={styles.buttonCart} onClick={this.removeItem} isDanger>
             <i className="fa fa-trash" />
           </Button>
         </span>

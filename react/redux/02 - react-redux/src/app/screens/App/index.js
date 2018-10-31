@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import store from '@redux/store';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer';
-import actionsCreators from '@redux/book/actions';
 
 import Book from './components/Book';
 import Search from './components/Search';
@@ -20,28 +19,37 @@ class App extends Component {
       const { books, bookSelected } = store.getState();
       this.setState({ books, bookSelected });
     });
-    store.dispatch(actionsCreators.getBooks());
+    // TODO to implement the dispatch
   }
 
-  onSearch = value => {
-    store.dispatch(actionsCreators.searchBook(value));
-  };
+  // TODO to implement the dispatch
+  onSearch = value => {};
 
-  addToCart = item => {
-    store.dispatch(actionsCreators.addToCart(item));
-  };
+  // TODO to implement the dispatch
+  addToCart = item => {};
 
-  addItem = itemId => {
-    store.dispatch(actionsCreators.addItem(itemId));
-  };
+  // TODO to implement the dispatch
+  addItem = itemId => {};
 
-  removeItem = itemId => {
-    store.dispatch(actionsCreators.removeItem(itemId));
+  // TODO to implement the dispatch
+  removeItem = itemId => {};
+
+  CONFIGURATION_BUTTON = {
+    add: {
+      text: 'Add to cart',
+      function: this.addToCart
+    },
+    remove: {
+      text: 'Remove',
+      function: this.removeItem,
+      isDanger: true
+    }
   };
 
   renderBooks = item => {
-    const isSelected = this.state.bookSelected.findIndex(el => el.id === item.id) === -1;
-    return <Book key={item.id} data={item} isSelected={isSelected} handleClick={this.addToCart} />;
+    const showButton = !this.state.bookSelected.some(el => el.id === item.id);
+    const configButton = showButton ? this.CONFIGURATION_BUTTON.add : this.CONFIGURATION_BUTTON.remove;
+    return <Book key={item.id} data={item} configButton={configButton} />;
   };
 
   render() {

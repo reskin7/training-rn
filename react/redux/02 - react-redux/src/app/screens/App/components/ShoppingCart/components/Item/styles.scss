@@ -24,16 +24,6 @@
   padding: 7px 10px;
 }
 
-.button-delete {
-  border-color: $red;
-  color: $red;
-  margin-left: $text-small;
-
-  &::after {
-    background: $red;
-  }
-}
-
 .quantity {
   background-color: $blue;
   border-radius: 50%;
