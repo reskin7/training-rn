@@ -1,5 +1,5 @@
 /*
-These action types.
+These are action types.
 The type of an action is a string that describes an action.
 The reducer will decide how to handle an action based on its type.
 See the @@BOOKS? That's the namespace.
