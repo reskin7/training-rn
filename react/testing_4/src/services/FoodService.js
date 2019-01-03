@@ -1,3 +1,7 @@
-import api from "../config/api";
+import api from '../config/api';
 
-export const getFoods = () => api.get("/foods");
+const FoodService = {
+  getFoods: () => api.get('/foods')
+};
+
+export default FoodService;

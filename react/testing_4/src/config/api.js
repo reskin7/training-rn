@@ -1,6 +1,6 @@
-import { create } from "apisauce";
+import { create } from 'apisauce';
 
-import { BASE_URL } from "./constants";
+import { BASE_URL } from './constants';
 
 const api = create({
   baseURL: BASE_URL,
