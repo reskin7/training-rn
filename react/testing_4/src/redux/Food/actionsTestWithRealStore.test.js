@@ -38,14 +38,13 @@ describe('Test - Store + reducer integration testing with real store', () => {
   it('is not loading foods after retrieving info from the api', () =>
     // eslint-disable-next-line max-nested-callbacks
     store.dispatch(actionCreators.getFoods()).then(() => {
-      expect(store.getState().foodsLoading).toBe(false);
+      // Missing code here
     }));
 
   it('is loading foods after retrieving info from the api', () =>
   // eslint-disable-next-line max-nested-callbacks
     store.dispatch(actionCreators.getFoods()).then(() => {
       const response = store.getState().foods;
-      expect(response).toBeTruthy();
-      expect(typeof response).toBe('object');
+      // Missing code here
     }));
 });
