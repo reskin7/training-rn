@@ -20,6 +20,6 @@ return {...params};
   }
 }
 
-export function reverseMerge() {
-  
+export function reverseMerge(a,b) {
+  return [...b,...a];
 }
