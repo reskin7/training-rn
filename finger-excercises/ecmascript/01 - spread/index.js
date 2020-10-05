@@ -12,6 +12,14 @@ export function min(...params) {
     }   
 }
 
-export function copy() {
+export function copy(params) {
+  if(isArray(params)){
+return [...params];
+  }else{
+return {...params};
+  }
+}
+
+export function reverseMerge() {
   
 }
