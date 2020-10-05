@@ -23,3 +23,8 @@ return {...params};
 export function reverseMerge(a,b) {
   return [...b,...a];
 }
+
+export function filterAttribs(params) {
+  const {a, b, ...rest} = params;
+  return rest;
+}
