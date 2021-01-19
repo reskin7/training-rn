@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* wbooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wbooksTests.m */; };
+		076C9DF81B3F2AFE84F284AC /* libPods-wbooks-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BE136A7E0623B824D97AE8 /* libPods-wbooks-tvOS.a */; };
+		0D54B539F8679589F50B1238 /* libPods-wbooks-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A7738218B0BBA33862C695 /* libPods-wbooks-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -15,11 +17,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* wbooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wbooksTests.m */; };
-		49610CF8B242242DDD71D210 /* libPods-wbooks-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EA938B7228FBAC8F147747 /* libPods-wbooks-tvOS.a */; };
-		5B9C136B02C0D0454B8A8A02 /* libPods-wbooks-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1259A080CD2B5721D1174B2 /* libPods-wbooks-tvOSTests.a */; };
-		76C16F282A88EB7C335D49F6 /* libPods-wbooks-wbooksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8959BDB0AF2F8418E9D7FB2 /* libPods-wbooks-wbooksTests.a */; };
+		811A79C19E8F8AD132E41CB8 /* libPods-wbooks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865B9B16A8E6999E029D0484 /* libPods-wbooks.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		DD53CC429EEFD1F671FF430B /* libPods-wbooks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0EAD7D38D1344302013AFA /* libPods-wbooks.a */; };
+		C2F0F2C432AC9A324A57F0DF /* libPods-wbooks-wbooksTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FAF33012B680C79DD58954 /* libPods-wbooks-wbooksTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,29 +44,29 @@
 		00E356EE1AD99517003FC87E /* wbooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wbooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* wbooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wbooksTests.m; sourceTree = "<group>"; };
+		096B0C616C588CFCE1C2D864 /* Pods-wbooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks.debug.xcconfig"; path = "Target Support Files/Pods-wbooks/Pods-wbooks.debug.xcconfig"; sourceTree = "<group>"; };
+		0C90A444C91E1F8D024492EF /* Pods-wbooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks.release.xcconfig"; path = "Target Support Files/Pods-wbooks/Pods-wbooks.release.xcconfig"; sourceTree = "<group>"; };
+		0DAFB389CAECDE115E523F33 /* Pods-wbooks-wbooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-wbooksTests.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E994091E5DE40EC84AFCD39 /* Pods-wbooks-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOS/Pods-wbooks-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		12FA1541F68AFCE5D17B55FD /* Pods-wbooks-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOSTests/Pods-wbooks-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* wbooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wbooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = wbooks/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = wbooks/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wbooks/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wbooks/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = wbooks/main.m; sourceTree = "<group>"; };
+		13BE136A7E0623B824D97AE8 /* libPods-wbooks-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* wbooks-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wbooks-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* wbooks-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wbooks-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35EA938B7228FBAC8F147747 /* libPods-wbooks-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5758508979B8506A35C4F9D5 /* Pods-wbooks-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOS/Pods-wbooks-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		67FB690C763A10CE7BE0F49A /* Pods-wbooks-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOSTests/Pods-wbooks-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		74799639768FB09FF05E06FB /* Pods-wbooks-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOS.release.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOS/Pods-wbooks-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		7A0EAD7D38D1344302013AFA /* libPods-wbooks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFE7B3B5AC87369B83A6AAD /* Pods-wbooks-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOS.release.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOS/Pods-wbooks-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wbooks/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A34369C6B5B38DFF6E3949EF /* Pods-wbooks-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOSTests/Pods-wbooks-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8959BDB0AF2F8418E9D7FB2 /* libPods-wbooks-wbooksTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-wbooksTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB76688013911CDC74EDD35 /* Pods-wbooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks.release.xcconfig"; path = "Target Support Files/Pods-wbooks/Pods-wbooks.release.xcconfig"; sourceTree = "<group>"; };
-		BFDCA51CDB2ACFD53C85A2BE /* Pods-wbooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks.debug.xcconfig"; path = "Target Support Files/Pods-wbooks/Pods-wbooks.debug.xcconfig"; sourceTree = "<group>"; };
-		E1259A080CD2B5721D1174B2 /* libPods-wbooks-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBDED3AA499DFA04367E99FB /* Pods-wbooks-wbooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-wbooksTests.release.xcconfig"; path = "Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests.release.xcconfig"; sourceTree = "<group>"; };
+		865B9B16A8E6999E029D0484 /* libPods-wbooks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FAF33012B680C79DD58954 /* libPods-wbooks-wbooksTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-wbooksTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A7738218B0BBA33862C695 /* libPods-wbooks-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wbooks-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0CD4D54FDA4F97527CBF8BB /* Pods-wbooks-wbooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-wbooksTests.debug.xcconfig"; path = "Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2627E322709C5A0B8028C96 /* Pods-wbooks-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-wbooks-tvOSTests/Pods-wbooks-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F74DE5961DE3364580D1F2BD /* Pods-wbooks-wbooksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wbooks-wbooksTests.release.xcconfig"; path = "Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C16F282A88EB7C335D49F6 /* libPods-wbooks-wbooksTests.a in Frameworks */,
+				C2F0F2C432AC9A324A57F0DF /* libPods-wbooks-wbooksTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD53CC429EEFD1F671FF430B /* libPods-wbooks.a in Frameworks */,
+				811A79C19E8F8AD132E41CB8 /* libPods-wbooks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49610CF8B242242DDD71D210 /* libPods-wbooks-tvOS.a in Frameworks */,
+				076C9DF81B3F2AFE84F284AC /* libPods-wbooks-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B9C136B02C0D0454B8A8A02 /* libPods-wbooks-tvOSTests.a in Frameworks */,
+				0D54B539F8679589F50B1238 /* libPods-wbooks-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,28 +141,12 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7A0EAD7D38D1344302013AFA /* libPods-wbooks.a */,
-				35EA938B7228FBAC8F147747 /* libPods-wbooks-tvOS.a */,
-				E1259A080CD2B5721D1174B2 /* libPods-wbooks-tvOSTests.a */,
-				A8959BDB0AF2F8418E9D7FB2 /* libPods-wbooks-wbooksTests.a */,
+				865B9B16A8E6999E029D0484 /* libPods-wbooks.a */,
+				13BE136A7E0623B824D97AE8 /* libPods-wbooks-tvOS.a */,
+				D6A7738218B0BBA33862C695 /* libPods-wbooks-tvOSTests.a */,
+				97FAF33012B680C79DD58954 /* libPods-wbooks-wbooksTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		408D2B3C92B06605F812EF17 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BFDCA51CDB2ACFD53C85A2BE /* Pods-wbooks.debug.xcconfig */,
-				ABB76688013911CDC74EDD35 /* Pods-wbooks.release.xcconfig */,
-				5758508979B8506A35C4F9D5 /* Pods-wbooks-tvOS.debug.xcconfig */,
-				74799639768FB09FF05E06FB /* Pods-wbooks-tvOS.release.xcconfig */,
-				A34369C6B5B38DFF6E3949EF /* Pods-wbooks-tvOSTests.debug.xcconfig */,
-				67FB690C763A10CE7BE0F49A /* Pods-wbooks-tvOSTests.release.xcconfig */,
-				F0CD4D54FDA4F97527CBF8BB /* Pods-wbooks-wbooksTests.debug.xcconfig */,
-				EBDED3AA499DFA04367E99FB /* Pods-wbooks-wbooksTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -180,7 +164,7 @@
 				00E356EF1AD99517003FC87E /* wbooksTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				408D2B3C92B06605F812EF17 /* Pods */,
+				D8A27018CDE557B55591DFC8 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -198,6 +182,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D8A27018CDE557B55591DFC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				096B0C616C588CFCE1C2D864 /* Pods-wbooks.debug.xcconfig */,
+				0C90A444C91E1F8D024492EF /* Pods-wbooks.release.xcconfig */,
+				0E994091E5DE40EC84AFCD39 /* Pods-wbooks-tvOS.debug.xcconfig */,
+				6CFE7B3B5AC87369B83A6AAD /* Pods-wbooks-tvOS.release.xcconfig */,
+				12FA1541F68AFCE5D17B55FD /* Pods-wbooks-tvOSTests.debug.xcconfig */,
+				F2627E322709C5A0B8028C96 /* Pods-wbooks-tvOSTests.release.xcconfig */,
+				0DAFB389CAECDE115E523F33 /* Pods-wbooks-wbooksTests.debug.xcconfig */,
+				F74DE5961DE3364580D1F2BD /* Pods-wbooks-wbooksTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "wbooksTests" */;
 			buildPhases = (
-				05F6E80638A66CFA6F05758D /* [CP] Check Pods Manifest.lock */,
+				71239BA3EAC199C56B86FA67 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				332A07519DCA217878A3BB2F /* [CP] Copy Pods Resources */,
+				CB46C205A770A0E2412435C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,13 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wbooks" */;
 			buildPhases = (
-				F17DEF0E02F9C5ADCDE3A4A2 /* [CP] Check Pods Manifest.lock */,
+				8B02F472894E8FA705DCF6DA /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				D8871D8E9DC6A679BC2E4A16 /* [CP] Copy Pods Resources */,
+				346D50B9C659B1752D64B3CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wbooks-tvOS" */;
 			buildPhases = (
-				7A59C32698E5A7BAAE08A2C0 /* [CP] Check Pods Manifest.lock */,
+				02D3F7228F3063223F49C154 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -266,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wbooks-tvOSTests" */;
 			buildPhases = (
-				209DC2B86778BB21669ADB12 /* [CP] Check Pods Manifest.lock */,
+				203221188BA8B3C0C179FE33 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -377,7 +377,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		05F6E80638A66CFA6F05758D /* [CP] Check Pods Manifest.lock */ = {
+		02D3F7228F3063223F49C154 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,14 +392,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wbooks-wbooksTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-wbooks-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		209DC2B86778BB21669ADB12 /* [CP] Check Pods Manifest.lock */ = {
+		203221188BA8B3C0C179FE33 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,47 +435,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		332A07519DCA217878A3BB2F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A59C32698E5A7BAAE08A2C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wbooks-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8871D8E9DC6A679BC2E4A16 /* [CP] Copy Pods Resources */ = {
+		346D50B9C659B1752D64B3CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,7 +453,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wbooks/Pods-wbooks-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F17DEF0E02F9C5ADCDE3A4A2 /* [CP] Check Pods Manifest.lock */ = {
+		71239BA3EAC199C56B86FA67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wbooks-wbooksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B02F472894E8FA705DCF6DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -513,6 +495,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB46C205A770A0E2412435C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wbooks-wbooksTests/Pods-wbooks-wbooksTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -608,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0CD4D54FDA4F97527CBF8BB /* Pods-wbooks-wbooksTests.debug.xcconfig */;
+			baseConfigurationReference = 0DAFB389CAECDE115E523F33 /* Pods-wbooks-wbooksTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -631,7 +631,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBDED3AA499DFA04367E99FB /* Pods-wbooks-wbooksTests.release.xcconfig */;
+			baseConfigurationReference = F74DE5961DE3364580D1F2BD /* Pods-wbooks-wbooksTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -651,7 +651,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFDCA51CDB2ACFD53C85A2BE /* Pods-wbooks.debug.xcconfig */;
+			baseConfigurationReference = 096B0C616C588CFCE1C2D864 /* Pods-wbooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -674,7 +674,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABB76688013911CDC74EDD35 /* Pods-wbooks.release.xcconfig */;
+			baseConfigurationReference = 0C90A444C91E1F8D024492EF /* Pods-wbooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5758508979B8506A35C4F9D5 /* Pods-wbooks-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 0E994091E5DE40EC84AFCD39 /* Pods-wbooks-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74799639768FB09FF05E06FB /* Pods-wbooks-tvOS.release.xcconfig */;
+			baseConfigurationReference = 6CFE7B3B5AC87369B83A6AAD /* Pods-wbooks-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A34369C6B5B38DFF6E3949EF /* Pods-wbooks-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 12FA1541F68AFCE5D17B55FD /* Pods-wbooks-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,7 +778,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67FB690C763A10CE7BE0F49A /* Pods-wbooks-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F2627E322709C5A0B8028C96 /* Pods-wbooks-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
